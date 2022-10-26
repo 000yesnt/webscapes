@@ -36,7 +36,7 @@ for scape, data in in_scapes.items():
 for npass in range(3):
     print(f"pass {npass}")
     for idx, scape in final.items():
-        # print(scape)
+        # crawl through each soundscape's "playsoundscape", to merge the "playrandom" and "playlooping" lists
         if scape.get("playsoundscape"):
             for subidx, subscape in enumerate(scape["playsoundscape"]):
                 try:
